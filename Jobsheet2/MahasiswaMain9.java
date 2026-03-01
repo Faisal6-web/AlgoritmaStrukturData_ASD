@@ -1,6 +1,6 @@
 public class MahasiswaMain9 {
     public static void main(String[] args) {
-        Mahasiswa mhsl = new Mahasiswa ();
+        Mahasiswa9 mhsl = new Mahasiswa9 ();
         mhsl.nama = "Muhammad Ali Farhan";
         mhsl.nim = "2241720171";
         mhsl.kelas = "SI 2J";
