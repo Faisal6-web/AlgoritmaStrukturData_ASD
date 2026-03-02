@@ -11,8 +11,8 @@ public class Dosen9 {
     public Dosen9 (String idDosen, String nama, boolean statusAktif, int tahunBergabung, String bidangKeahlian) {
         this.idDosen = idDosen;
         this.nama=nama;
-        this.statusAktif = true;
-        this.tahunBergabung = 2024;
+        this.statusAktif = statusAktif;
+        this.tahunBergabung = tahunBergabung;
         this.bidangKeahlian = bidangKeahlian;
     }
     
