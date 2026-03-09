@@ -8,7 +8,7 @@ public static void main(String[] args) {
     String kode, nama, dummy;
     int sks, jumlahJam;
 
-    for (int i =0; i < 3; i++) {
+     for (int i =0; i < 3; i++) {
         System.out.println("Masukkan Data MataKuliah ke-"+ (i + 1));
         System.out.print("Kode            : ");
         kode = sc.nextLine();
@@ -23,6 +23,15 @@ public static void main(String[] args) {
         System.out.println("-------------------------------");
 
         arrayOfMataKuliah9s[i] = new MataKuliah9(kode, nama, sks, jumlahJam);
+    }
+    
+    for (int i =0; i < 3; i++) {
+        System.out.println("Data MataKuliah ke-"+ (i + 1));
+       System.out.println("Kode             : "+arrayOfMataKuliah9s[i].kode);
+       System.out.println("Nama             : "+arrayOfMataKuliah9s[i].nama);
+       System.out.println("SKS              : "+arrayOfMataKuliah9s[i].sks);
+       System.out.println("Jumlah Jam       : "+ arrayOfMataKuliah9s[i].jumlahJam);
+       System.out.println("-------------------------------------------------------");
     }
 }    
 }
