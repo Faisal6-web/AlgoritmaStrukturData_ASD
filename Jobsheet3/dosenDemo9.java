@@ -35,6 +35,9 @@ public class dosenDemo9 {
     dataDosen9s[i] = new dosen9(kode, nama, jenisKelamin, usia);
    }
 
+   System.out.println("\n==================================");
+   System.out.println("             HASIL DATA DOSEN            ");
+   System.out.println("====================================");
 
    int counter = 1;
         for (dosen9 dosen : dataDosen9s) {
@@ -55,7 +58,18 @@ public class dosenDemo9 {
             System.out.println("-----------------------------------");
             counter++;
         }
+
+        System.out.println("\n\n=======================================");
+        System.out.println("            PENGUJIAN CLASS DATA DOSEN          ");
+        System.out.println("===========================================");
         
+        DataDosen9 data = new DataDosen9 ();
+
+        data.dataSemuaDosen(dataDosen9s);
+        data.jumlahDosenPerJenisKelamin(dataDosen9s);
+        data.rerataUsiaDosenPerJenisKelamin(dataDosen9s);
+        data.infoDosenPalingTua(dataDosen9s);
+        data.infoDosenPalingMuda(dataDosen9s);
         sc.close();
 }
 }
