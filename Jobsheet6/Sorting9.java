@@ -11,6 +11,7 @@ public Sorting9(int Data [], int jmlData) {
     }
 }
 
+
 void bubbleSort() {
     int temp = 0;
     for (int i = 0; i < jumData-1; i++){
