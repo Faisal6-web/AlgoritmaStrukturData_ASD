@@ -28,6 +28,9 @@ public class Peminjaman_08 {
 
 
     void tampilPeminjaman() {
-        
+        System.out.println("Nama Peminjam Buku              : "+mhs);
+        System.out.println("Judul Buku yang diPinjam        : "+ buku);
+        System.out.println("Lama Peminjaman Buku          : "+ lamaPinjam + " Hari");
+        System.out.println("-------------------------------------------------------");
     }
 }
