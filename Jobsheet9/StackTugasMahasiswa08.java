@@ -62,4 +62,17 @@ public void print() {
     System.out.println("");
 }
 
+public Mahasiswa08 peekBawah() {
+    if (!isEmpety()) {
+        return stack[0];
+    }else {
+        System.out.println("Stack ksosng! Tidak ada tugas yang dikumpulkan.");
+        return null;
+    }
+}
+
+public int JumlahTugas() {
+    return top + 1;
+}
+
 }
