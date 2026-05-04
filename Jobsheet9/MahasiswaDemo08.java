@@ -18,11 +18,11 @@ public class MahasiswaDemo08 {
         scan.nextLine();
         switch (pilih) {
             case 1:
-                System.out.println("Nama: ");
+                System.out.print("Nama: ");
                 String nama = scan.nextLine();
-                System.out.println("NIM: ");
+                System.out.print("NIM: ");
                 String nim = scan.nextLine();
-                System.out.println("Kelas: ");
+                System.out.print("Kelas: ");
                 String kelas = scan.nextLine();
                 Mahasiswa08 mhs = new Mahasiswa08(nama, nim, kelas);
                 stack.push(mhs);
@@ -56,6 +56,6 @@ public class MahasiswaDemo08 {
                 System.out.println("Pilihan tidak valid.");
         }
     } while (true);
-    
+
     }
 }
