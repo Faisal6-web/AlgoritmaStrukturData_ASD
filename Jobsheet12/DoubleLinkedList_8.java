@@ -72,25 +72,49 @@ public class DoubleLinkedList_8 {
 
     public void removeFirst() {
         if (isEmpty()) {
-            System.out.println("Linked List Masih kosong, tidak dapat dihapus");
-        }else if (head == tail) {
-            head = null;
-            tail = null;
+            System.out.println("Linked List kosong masih kosong, tidak dapat dihapus");
+            return;
+        }
+        Mahasiswa_8 deleteData = head.data;
+
+        if (head == tail) {
+            head = tail = null;
         }else {
             head = head.next;
             head.prev = null;
         }
+        System.out.println("Data mahasiswa berikut berhasil dihapus dari awal list:");
+        deleteData.tampil();
     }
 
     public void removeLast() {
         if (isEmpty()) {
-            System.out.println("Linked List Masih kosong, tidak dapat dihapus");
-        }else if (head == tail) {
-            head = null;
-            tail = null;
+            System.out.println("Linked List kosong masih kosong, tidak dapat dihapus");
+            return;
+        }
+        Mahasiswa_8 deleteData = tail.data;
+
+        if (head == tail) {
+            head = tail = null;
         }else {
             tail = tail.prev;
             tail.next = null;
         }
+        System.out.println("Data mahasiswa berikut berhasil dihapus dari akhir list:");
+        deleteData.tampil();
     }
+
+    public void printReverse() {
+    if (isEmpty()) {
+        System.out.println("Linked List masih kosong");
+        return;
+    }
+    
+    Node_8 current = tail;
+    System.out.println("Cetak Data Terbalik (Tail ke Head):");
+    while (current != null) {
+        current.data.tampil();
+        current = current.prev;
+    }
+}
 }
